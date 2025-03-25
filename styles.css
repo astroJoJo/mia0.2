@@ -13,7 +13,7 @@ body {
     text-align: center;
 }
 .header {
-    background-color: #0073b1;
+    background-color: linear-gradient(to right, #ff6f00, #e64a19);
     padding: 20px;
 }
 .header img {
