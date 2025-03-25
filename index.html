@@ -4,127 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mia Healthcare Email</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-        }
-        .container {
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        /* Header Styling */
-        .header {
-            background: linear-gradient(to right, #ff6f00, #e64a19); /* Gradient to match footer */
-            padding: 0;
-            position: relative;
-        }
-        .logo-bar {
-            background-color: #ffffff;
-            padding: 10px;
-            text-align: center;
-        }
-        .logo-bar img {
-            max-width: 150px;
-        }
-
-        .hero img {
-            width: 80%;
-            height: auto;
-        }
-
-        /* CTA Styling */
-        .cta-container {
-            position: relative;
-            padding: 20px;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 12px 20px;
-            background-color: #0073b1;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-            margin-top: 10px;
-        }
-        .cta-button:hover {
-            background-color: #005f8d;
-        }
-        .cta-text {
-            display: none;
-            color: #333333;
-            font-size: 18px;
-            font-weight: bold;
-            margin-top: 15px;
-        }
-        .cta-container:hover .cta-text {
-            display: block;
-        }
-
-        /* Benefits Section */
-        .content {
-            padding: 20px;
-        }
-        .benefits {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .benefit {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            width: 30%;
-        }
-        .benefit i {
-            font-size: 40px;
-            color: #e64a19;
-            margin-bottom: 10px;
-        }
-
-        /* Footer Styling */
-        .footer {
-            background: linear-gradient(to right, #ff6f00, #e64a19);
-            position: relative;
-            padding: 40px 0;
-        }
-        .footer::before {
-            content: '';
-            position: absolute;
-            bottom: -30px;
-            left: 0;
-            width: 100%;
-            height: 62px;
-            background: #424242;
-            border-radius: 50% 50% 0 0;
-        }
-        .footer-content {
-            text-align: center;
-            color: #fff;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="header-bar">
+        <img src="https://www.miahealthcare.co.za/static/media/mia_logo_new.6a37d10b.png" alt="Mia Healthcare Logo" class="logo">
+    </div>
+
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <div class="logo-bar">
-                <img src="https://www.miahealthcare.co.za/static/media/md_image1.0adeb8b3.jpg" alt="Mia Healthcare Logo">
-            </div>
+            <img src="https://www.miahealthcare.co.za/static/media/md_image1.0adeb8b3.jpg" alt="Mia Healthcare">
         </div>
 
         <!-- Hero Image -->
@@ -143,15 +33,15 @@
             <h2>Why Choose Mia Healthcare?</h2>
             <div class="benefits">
                 <div class="benefit">
-                    <i class="fas fa-clock"></i>
+                    <img src="https://www.miahealthcare.co.za/static/media/clock.b5a4452b.svg" alt="Convenience">
                     <p>On-site dental services reduce employee downtime.</p>
                 </div>
                 <div class="benefit">
-                    <i class="material-icons">attach_money</i>
+                    <img src="https://cdn-icons-png.freepik.com/256/320/320768.png" alt="Cost-Effective">
                     <p>No direct costs to your company; we handle billing.</p>
                 </div>
                 <div class="benefit">
-                    <i class="fas fa-heart"></i>
+                    <img src="https://icons.getbootstrap.com/icons/tag/" alt="Employee Wellness">
                     <p>Enhance overall employee satisfaction and health.</p>
                 </div>
             </div>
@@ -166,4 +56,3 @@
     </div>
 </body>
 </html>
-
