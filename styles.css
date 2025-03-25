@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.header {
+    background-color: #0073b1;
+    padding: 20px;
+}
+.header img {
+    max-width: 150px;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.cta-container {
+    position: relative;
+    padding: 20px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0073b1;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+.cta-button:hover {
+    background-color: #005f8d;
+}
+.cta-text {
+    display: none;
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.cta-container:hover .cta-text {
+    display: block;
+}
+.content {
+    padding: 20px;
+}
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.benefit {
+    width: 30%;
+}
+.benefit img {
+    max-width: 50px;
+}
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+}
