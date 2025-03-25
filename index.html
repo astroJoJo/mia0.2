@@ -73,10 +73,22 @@
             max-width: 50px;
         }
         .footer {
-            background-color: #333333;
-            color: #ffffff;
-            padding: 10px;
+            background: linear-gradient(to right, #ff6f00, #e64a19); /* Orange gradient */
+            position: relative;
+            padding: 40px 0;
         }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            bottom: -30px; /* Adjust this value to control how much the curve extends */
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: #424242; /* Grey color */
+            border-radius: 50% 50% 0 0;
+        }
+
     </style>
 </head>
 <body>
@@ -118,8 +130,9 @@
 
         <!-- Footer -->
         <div class="footer">
-            <p>Contact Us: 1234 Dental St, Tooth City, SA | Phone: +27 XXXXXXXXXX</p>
-        </div>
-    </div>
+            <div class="footer-content">
+              <p>Your employees deserve it! And it is 100% FREE!</p>
+            </div>
+          </div>
 </body>
 </html>
