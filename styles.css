@@ -56,15 +56,25 @@ body {
 }
 .benefits {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Evenly space out benefits */
+    align-items: center; /* Center items vertically */
     margin-top: 20px;
 }
+
 .benefit {
+    display: flex;
+    flex-direction: column; /* Stack icon above text */
+    align-items: center; /* Center align everything */
+    text-align: center; /* Ensure text stays centered */
     width: 30%;
 }
-.benefit img {
-    max-width: 50px;
+
+.benefit i { 
+    font-size: 40px; /* Make icons larger */
+    color: #e64a19; /* Add a theme color */
+    margin-bottom: 10px; /* Space between icon and text */
 }
+
 .footer {
     background: linear-gradient(to right, #ff6f00, #e64a19); /* Orange gradient */
     position: relative;
