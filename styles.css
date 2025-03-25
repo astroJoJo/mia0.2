@@ -44,8 +44,9 @@ body {
 
 .header img {
     max-width: 150px;
-    display: block; /* Ensures image behaves properly */
-    margin: 0 auto; /* Centers the image */
+    display: block;
+    margin: 0; /* Remove auto-centering */
+    padding-left: 20px; /* Push it slightly from the left for spacing */
 }
 
 /* Rest of your existing CSS remains the same */
