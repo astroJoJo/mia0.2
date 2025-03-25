@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mia Healthcare Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .header {
+            background-color: #0073b1;
+            padding: 20px;
+        }
+        .header img {
+            max-width: 150px;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .cta-container {
+            position: relative;
+            padding: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #0073b1;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        .cta-button:hover {
+            background-color: #005f8d;
+        }
+        .cta-text {
+            display: none;
+            color: #333333;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .cta-container:hover .cta-text {
+            display: block;
+        }
+        .content {
+            padding: 20px;
+        }
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .benefit {
+            width: 30%;
+        }
+        .benefit img {
+            max-width: 50px;
+        }
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://www.miahealthcare.co.za/static/media/logo.12345.png" alt="Mia Healthcare Logo">
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero">
+            <img src="https://www.miahealthcare.co.za/static/media/mobile-clinic.12345.jpg" alt="Mobile Dental Clinic">
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-container">
+            <a href="https://api.whatsapp.com/send/?phone=27837000305&text&app_absent=0" class="cta-button">Schedule a Free Consultation</a>
+            <div class="cta-text">Bringing Quality Dental Care to Your Workplace – At No Cost</div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Why Choose Mia Healthcare?</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <img src="https://www.miahealthcare.co.za/static/media/convenience-icon.12345.png" alt="Convenience">
+                    <p>On-site dental services reduce employee downtime.</p>
+                </div>
+                <div class="benefit">
+                    <img src="https://www.miahealthcare.co.za/static/media/cost-effective-icon.12345.png" alt="Cost-Effective">
+                    <p>No direct costs to your company; we handle billing.</p>
+                </div>
+                <div class="benefit">
+                    <img src="https://www.miahealthcare.co.za/static/media/wellness-icon.12345.png" alt="Employee Wellness">
+                    <p>Enhance overall employee satisfaction and health.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Contact Us: 1234 Dental St, Tooth City, SA | Phone: +27 XXXXXXXXXX</p>
+        </div>
+    </div>
+</body>
+</html>
