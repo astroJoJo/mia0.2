@@ -1,30 +1,42 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 .container {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    background-color: linear-gradient(to right, #ff6f00, #e64a19);
+    background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
+/* Header Styling */
 .header {
-    background-color: linear-gradient(to right, #ff6f00, #e64a19);
-    padding: 20px;
+    background: linear-gradient(to right, #ff6f00, #e64a19); /* Matches footer */
+    padding: 0;
+    position: relative;
 }
-.header img {
+.logo-bar {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+.logo-bar img {
     max-width: 150px;
 }
+
+/* Hero Image */
 .hero img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
+
+/* CTA Section */
 .cta-container {
-    position: relative;
     padding: 20px;
 }
 .cta-button {
@@ -42,60 +54,64 @@ body {
     background-color: #005f8d;
 }
 .cta-text {
-    display: none;
     color: #333333;
     font-size: 18px;
     font-weight: bold;
     margin-top: 15px;
 }
-.cta-container:hover .cta-text {
-    display: block;
-}
+
+/* Benefits Section */
 .content {
     padding: 20px;
 }
 .benefits {
     display: flex;
-    justify-content: space-around; /* Evenly space out benefits */
-    align-items: center; /* Center items vertically */
+    justify-content: space-around;
+    align-items: center;
     margin-top: 20px;
 }
-
 .benefit {
     display: flex;
-    flex-direction: column; /* Stack icon above text */
-    align-items: center; /* Center align everything */
-    text-align: center; /* Ensure text stays centered */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     width: 30%;
 }
-
-.benefit i { 
-    font-size: 40px; /* Make icons larger */
-    color: #e64a19; /* Add a theme color */
-    margin-bottom: 10px; /* Space between icon and text */
+.benefit i {
+    font-size: 40px;
+    color: #e64a19;
+    margin-bottom: 10px;
 }
 
+/* Footer Styling */
 .footer {
-    background: linear-gradient(to right, #ff6f00, #e64a19); /* Orange gradient */
-    position: relative;
+    background: linear-gradient(to right, #ff6f00, #e64a19);
     padding: 40px 0;
-  }
-  
-  .footer::before {
+    position: relative;
+}
+.footer::before {
     content: '';
     position: absolute;
-    bottom: -30px; /* Adjust this value to control how much the curve extends */
+    bottom: -30px;
     left: 0;
     width: 100%;
-    height: 50px;
-    background: #424242; /* Grey color */
+    height: 62px;
+    background: #424242;
     border-radius: 50% 50% 0 0;
-  }
-  
-  .footer-content {
+}
+.footer-content {
     text-align: center;
     color: #fff;
     font-size: 18px;
-  }
-  
-  
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .benefits {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .benefit {
+        width: 80%;
+    }
+}
