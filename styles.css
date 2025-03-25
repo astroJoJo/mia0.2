@@ -1,44 +1,65 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
 }
+
+/* Static Header Bar */
+.header-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    max-height: 40px;
+}
+
+/* Main Container */
 .container {
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 60px auto 0; /* Space for fixed header */
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-/* Header Styling */
+/* Header with Gradient */
 .header {
-    background: linear-gradient(to right, #ff6f00, #e64a19); /* Matches footer */
-    padding: 0;
-    position: relative;
-}
-.logo-bar {
-    background-color: #ffffff;
-    padding: 10px;
-    text-align: center;
-}
-.logo-bar img {
-    max-width: 150px;
+    background: linear-gradient(to right, #ff6f00, #e64a19);
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Hero Image */
+.header img {
+    max-width: 150px;
+    display: block; /* Ensures image behaves properly */
+    margin: 0 auto; /* Centers the image */
+}
+
+/* Rest of your existing CSS remains the same */
 .hero img {
     width: 80%;
     height: auto;
 }
 
-/* CTA Section */
 .cta-container {
     padding: 20px;
+    position: relative;
 }
+
+/* ... (keeping your other styles) ... */
 .cta-button {
     display: inline-block;
     padding: 12px 20px;
@@ -49,47 +70,35 @@ body {
     font-size: 16px;
     transition: background-color 0.3s ease;
     margin-top: 10px;
-}
-.cta-button:hover {
+}.cta-button:hover {
     background-color: #005f8d;
-}
-.cta-text {
+}.cta-text {
+    display: none;
     color: #333333;
     font-size: 18px;
     font-weight: bold;
     margin-top: 15px;
-}
-
-/* Benefits Section */
-.content {
-    padding: 20px;
-}
+}.cta-container:hover .cta-text {
+    display: block;
+}/* Benefits Section */
 .benefits {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-}
-.benefit {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+}.benefit {
     width: 30%;
-}
-.benefit i {
-    font-size: 40px;
-    color: #e64a19;
+    text-align: center;
+}.benefit img {
+    max-width: 50px;
     margin-bottom: 10px;
-}
-
-/* Footer Styling */
+}/* Footer */
 .footer {
     background: linear-gradient(to right, #ff6f00, #e64a19);
-    padding: 40px 0;
     position: relative;
-}
-.footer::before {
+    padding: 40px 0;
+    color: #fff;
+}.footer::before {
     content: '';
     position: absolute;
     bottom: -30px;
@@ -98,20 +107,8 @@ body {
     height: 62px;
     background: #424242;
     border-radius: 50% 50% 0 0;
-}
-.footer-content {
+}.footer-content {
     text-align: center;
-    color: #fff;
     font-size: 18px;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    .benefits {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .benefit {
-        width: 80%;
-    }
-}
