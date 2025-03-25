@@ -45,7 +45,7 @@ body {
 .header img {
     max-width: 150px;
     display: block;
-    margin: 0; /* Remove auto-centering */
+    margin: 0, auto; /* Remove auto-centering */
     padding-left: 20px; /* Push it slightly from the left for spacing */
 }
 
